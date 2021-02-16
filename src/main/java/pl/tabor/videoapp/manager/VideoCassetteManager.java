@@ -37,9 +37,9 @@ public class VideoCassetteManager {
         videoCassetteRepo.deleteById(id);
     }
 
-    @EventListener(ApplicationReadyEvent.class)
+  @EventListener(ApplicationReadyEvent.class)
     public void fillDB() {
         saveVideo(new VideoCassette(1L, "Titanic", LocalDate.of(1995, 1, 1)));
-        saveVideo(new VideoCassette(1L, "Pulp Fiction", LocalDate.of(1990, 2, 2)));
+        saveVideo(new VideoCassette(2L, "Pulp Fiction", LocalDate.of(1990, 2, 2)));
     }
 }

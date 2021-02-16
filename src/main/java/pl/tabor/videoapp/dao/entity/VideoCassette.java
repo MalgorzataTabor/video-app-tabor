@@ -1,14 +1,17 @@
 package pl.tabor.videoapp.dao.entity;
 
+
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
+import javax.persistence.Id;
 import java.time.LocalDate;
 
 @Entity
 public class VideoCassette {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @javax.persistence.Id
+    @Id
     private Long Id;
     private String title;
     private LocalDate productionYear;
